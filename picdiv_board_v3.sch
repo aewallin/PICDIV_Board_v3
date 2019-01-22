@@ -1929,14 +1929,6 @@ Wire Wire Line
 Connection ~ 5950 3050
 Wire Wire Line
 	6050 2300 5750 2300
-Wire Wire Line
-	6050 2400 5950 2400
-Wire Wire Line
-	5950 2400 5950 2600
-Wire Wire Line
-	6050 2500 5750 2500
-Wire Wire Line
-	5750 2500 5750 2600
 Text Notes 6800 2500 0    50   ~ 0
 SYNC-MODE\nA\nB
 Text GLabel 6950 850  2    50   Input ~ 0
@@ -2137,9 +2129,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 2650 9700 2600
 Text Label 9550 1100 0    50   ~ 0
-U6_3V3
-Text Label 9000 2200 0    50   ~ 0
-U6_3V3
+U105_3V3
 Wire Wire Line
 	9300 2200 9000 2200
 NoConn ~ 10100 1700
@@ -2213,7 +2203,7 @@ Text Label 2000 6650 0    50   ~ 0
 w5
 Text Label 5750 3150 0    50   ~ 0
 sync
-Text Label 5950 2400 0    50   ~ 0
+Text Label 5950 2500 0    50   ~ 0
 A
 Text Label 5750 2500 0    50   ~ 0
 B
@@ -2223,4 +2213,14 @@ Text Label 10200 1800 0    50   ~ 0
 PPS_A
 Text Label 10200 3850 0    50   ~ 0
 PPS_B
+Wire Wire Line
+	6050 2500 5950 2500
+Wire Wire Line
+	5950 2500 5950 2600
+Wire Wire Line
+	6050 2400 5750 2400
+Wire Wire Line
+	5750 2400 5750 2600
+Text Label 9000 2200 0    50   ~ 0
+U105_3V3
 $EndSCHEMATC
