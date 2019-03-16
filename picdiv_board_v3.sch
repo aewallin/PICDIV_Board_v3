@@ -1440,7 +1440,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 6450 6350 6450
 $Comp
-L awallin:LT1963AxT-3.3 U101
+L picdiv_board_v3-rescue:LT1963AxT-3.3-awallin U101
 U 1 1 5C8A5F40
 P 1500 5650
 F 0 "U101" H 1500 6017 50  0000 C CNN
@@ -1598,7 +1598,7 @@ F 3 "" H 5800 5400 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L awallin:LT1963AxT-3.3 U102
+L picdiv_board_v3-rescue:LT1963AxT-3.3-awallin U102
 U 1 1 5C9BC8AF
 P 4800 5650
 F 0 "U102" H 4800 6017 50  0000 C CNN
