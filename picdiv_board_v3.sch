@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:picdiv_board_v3-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -726,7 +727,7 @@ $Comp
 L Device:R R10
 U 1 1 5B3E51AF
 P 5300 4700
-F 0 "R10" V 5380 4700 50  0000 C CNN
+F 0 "R10" V 5200 4650 50  0000 C CNN
 F 1 "300k" V 5300 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 4700 50  0001 C CNN
 F 3 "" H 5300 4700 50  0001 C CNN
@@ -746,8 +747,6 @@ F 3 "" H 5100 4700 50  0001 C CNN
 	1    5100 4700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7000 5150 7000 5050
 $Comp
 L Device:C C10
 U 1 1 5B3E5CF4
@@ -1018,11 +1017,11 @@ Text Notes 2050 6800 0    60   ~ 0
 490-7835-1-ND
 Text Notes 4250 7200 0    60   ~ 0
 LT1963AEQ#PBF-ND
-Text Notes 6200 5250 0    60   ~ 0
+Text Notes 6000 5000 0    60   ~ 0
 LTC6993CS6-1#TRMPBFCT-ND
 Text Notes 3850 3550 0    60   ~ 0
 PIC12F675T-I/SNCT-ND
-Text Notes 9200 5250 0    60   ~ 0
+Text Notes 8800 4700 0    60   ~ 0
 800-2895-5-ND
 Text Notes 1000 6800 0    60   ~ 0
 SRF0905-100YCT-ND 
@@ -1155,13 +1154,13 @@ F 3 "~" H 5600 1850 50  0001 C CNN
 	1    5600 1850
 	-1   0    0    1   
 $EndComp
-Text Notes 10300 5400 0    50   ~ 0
+Text Notes 10150 5500 0    50   ~ 0
 Output:\n3.3V into 1MOhm \n(with ringing)\n\n2.7V into 50R\n\n10ms long 1PPS-pulse
 Text Notes 550  2400 0    50   ~ 0
 10MHz sinewave input\nXX dBm to YY dBm \n(to be measured)
 Text Notes 2950 4200 1    50   ~ 0
 10MHz square-wave clock for PIC
-Text Notes 4950 5150 0    50   ~ 0
+Text Notes 4700 5000 0    50   ~ 0
 R10, R15, R16\nset blink-length\nsee LTC6993 datasheet
 Text Notes 6200 650  0    50   ~ 0
 Olimex-style 100mil ICSP header
@@ -2223,4 +2222,10 @@ Wire Wire Line
 	5750 2400 5750 2600
 Text Label 9000 2200 0    50   ~ 0
 U105_3V3
+Text Notes 5300 6400 0    50   ~ 0
+6VDC for sine-to-square
+Text Notes 2250 5250 0    50   ~ 0
+3V3 for PIC
+Text Notes 5750 5700 0    50   ~ 0
+3V3 for buffers
 $EndSCHEMATC
