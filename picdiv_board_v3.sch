@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:picdiv_board_v3-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1013,7 +1012,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 7350 3200 7350
 Connection ~ 3200 7350
-Text Notes 2050 6800 0    60   ~ 0
+Text Notes 2050 6850 0    60   ~ 0
 490-7835-1-ND
 Text Notes 4250 7200 0    60   ~ 0
 LT1963AEQ#PBF-ND
@@ -1023,8 +1022,8 @@ Text Notes 3850 3550 0    60   ~ 0
 PIC12F675T-I/SNCT-ND
 Text Notes 8800 4700 0    60   ~ 0
 800-2895-5-ND
-Text Notes 1000 6800 0    60   ~ 0
-SRF0905-100YCT-ND 
+Text Notes 1050 7000 0    60   ~ 0
+CM-Choke:\nSRF0905-100YCT-ND 
 Wire Wire Line
 	1700 3150 1750 3150
 Wire Wire Line
@@ -1116,7 +1115,7 @@ F 3 "~" H 2750 3150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 7000 6400 0    50   ~ 0
-PIC programming notes (2018-08)\nMPLABX IPE v5.05 programming software\nUSB -> microchip ICD3 -> Olimex-cable\nProgramming VDD 4.0V, power device from programmer\npd18.asm (1/2.5/5/10 MHz to 10ms 1PPS)\npd18.hex start 0x0, end 0x73. checksum 734F
+PIC code: https://github.com/aewallin/PICDIV\nPIC programming notes (2018-08)\nMPLABX IPE v5.05 programming software\nUSB -> microchip ICD3 -> Olimex-cable\nProgramming VDD 4.0V, power device from programmer\npd18.asm (1/2.5/5/10 MHz to 10ms 1PPS)\npd18.hex start 0x0, end 0x73. checksum 734F\n
 Text Notes 6400 4400 0    50   ~ 0
 ca 200ms blink
 $Comp
@@ -1158,8 +1157,8 @@ Text Notes 10150 5500 0    50   ~ 0
 Output:\n3.3V into 1MOhm \n(with ringing)\n\n2.7V into 50R\n\n10ms long 1PPS-pulse
 Text Notes 550  2400 0    50   ~ 0
 10MHz sinewave input\nXX dBm to YY dBm \n(to be measured)
-Text Notes 2950 4200 1    50   ~ 0
-10MHz square-wave clock for PIC
+Text Notes 2750 3950 0    50   ~ 0
+10MHz square-wave \nclock for PIC
 Text Notes 4700 5000 0    50   ~ 0
 R10, R15, R16\nset blink-length\nsee LTC6993 datasheet
 Text Notes 6200 650  0    50   ~ 0
