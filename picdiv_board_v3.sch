@@ -644,17 +644,6 @@ F 3 "" H 9700 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CTRIM C15
-U 1 1 5B3DD7EC
-P 8950 3850
-F 0 "C15" H 9010 3770 50  0000 C CNN
-F 1 "10p" H 8850 3950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_Trimmer_Murata_TZB4-A" H 8950 3850 50  0001 C CNN
-F 3 "" H 8950 3850 50  0001 C CNN
-	1    8950 3850
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR031
 U 1 1 5B3DDF23
 P 8750 3850
@@ -1216,17 +1205,6 @@ F 3 "~" H 6600 950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:EMI_Filter_LL_1423 FL101
-U 1 1 5C47F2F9
-P 1750 6550
-F 0 "FL101" H 1750 6828 50  0000 C CNN
-F 1 "EMI_Filter_LL_1423" H 1750 6737 50  0000 C CNN
-F 2 "awallinKiCadFootprints:Filter_Bourns_SRF0905_6.0x9.2mm" H 1750 6300 50  0001 C CNN
-F 3 "~" V 1750 6590 50  0001 C CNN
-	1    1750 6550
-	1    0    0    1   
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad J104
 U 1 1 5C47FF79
 P 2950 7350
@@ -1439,17 +1417,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 6450 6350 6450
 $Comp
-L picdiv_board_v3-rescue:LT1963AxT-3.3-awallin U101
-U 1 1 5C8A5F40
-P 1500 5650
-F 0 "U101" H 1500 6017 50  0000 C CNN
-F 1 "LT1963AxT-3.3" H 1500 5926 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1500 5200 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf" H 1500 5100 50  0001 C CNN
-	1    1500 5650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C101
 U 1 1 5C8A6502
 P 950 5750
@@ -1595,17 +1562,6 @@ F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5800 5400 50  0001 C CN
 F 3 "" H 5800 5400 50  0001 C CNN
 	1    5800 5400
 	1    0    0    1   
-$EndComp
-$Comp
-L picdiv_board_v3-rescue:LT1963AxT-3.3-awallin U102
-U 1 1 5C9BC8AF
-P 4800 5650
-F 0 "U102" H 4800 6017 50  0000 C CNN
-F 1 "LT1963AxT-3.3" H 4800 5926 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4800 5200 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf" H 4800 5100 50  0001 C CNN
-	1    4800 5650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C103
@@ -2022,17 +1978,6 @@ F 3 "" H 9700 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CTRIM C105
-U 1 1 5CEF3E8F
-P 8950 1800
-F 0 "C105" H 9010 1720 50  0000 C CNN
-F 1 "10p" H 8850 1900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_Trimmer_Murata_TZB4-A" H 8950 1800 50  0001 C CNN
-F 3 "" H 8950 1800 50  0001 C CNN
-	1    8950 1800
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0122
 U 1 1 5CEF3E96
 P 8750 1800
@@ -2176,19 +2121,11 @@ Connection ~ 6350 3150
 Wire Wire Line
 	6350 3150 5900 3150
 Wire Wire Line
-	1550 6650 1050 6650
-Wire Wire Line
 	1050 6650 1050 6550
 Wire Wire Line
 	1050 6550 1000 6550
 Wire Wire Line
 	1000 6450 1100 6450
-Wire Wire Line
-	1400 6450 1550 6450
-Wire Wire Line
-	1950 6450 2050 6450
-Wire Wire Line
-	1950 6650 2050 6650
 Text Label 1050 6450 0    50   ~ 0
 w1
 Text Label 1450 6450 0    50   ~ 0
@@ -2227,4 +2164,67 @@ Text Notes 2250 5250 0    50   ~ 0
 3V3 for PIC
 Text Notes 5750 5700 0    50   ~ 0
 3V3 for buffers
+$Comp
+L Regulator_Linear:LT1963AxST-3.3 U2
+U 1 1 614DCBD7
+P 4800 5650
+F 0 "U2" H 4800 6017 50  0000 C CNN
+F 1 "LT1963AxST-3.3" H 4800 5926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4800 5200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf" H 4800 5100 50  0001 C CNN
+	1    4800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LT1963AxST-3.3 U1
+U 1 1 614E5964
+P 1500 5650
+F 0 "U1" H 1500 6017 50  0000 C CNN
+F 1 "LT1963AxST-3.3" H 1500 5926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1500 5200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf" H 1500 5100 50  0001 C CNN
+	1    1500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Filter_EMI_LL_1423 FL1
+U 1 1 614EB8A6
+P 1750 6550
+F 0 "FL1" H 1750 6831 50  0000 C CNN
+F 1 "Filter_EMI_LL_1423" H 1750 6740 50  0000 C CNN
+F 2 "Filter:Filter_Bourns_SRF0905_6.0x9.2mm" H 1750 6300 50  0001 C CNN
+F 3 "~" V 1750 6590 50  0001 C CNN
+	1    1750 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6450 1950 6450
+Wire Wire Line
+	2050 6650 1950 6650
+Wire Wire Line
+	1550 6650 1050 6650
+Wire Wire Line
+	1550 6450 1400 6450
+$Comp
+L Device:C_Trim C8
+U 1 1 61547ED6
+P 8950 3850
+F 0 "C8" V 8698 3850 50  0000 C CNN
+F 1 "C_Trim" V 8789 3850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_Trimmer_Murata_TZB4-A" H 8950 3850 50  0001 C CNN
+F 3 "~" H 8950 3850 50  0001 C CNN
+	1    8950 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Trim C6
+U 1 1 61551B5D
+P 8950 1800
+F 0 "C6" V 9203 1800 50  0000 C CNN
+F 1 "C_Trim" V 9112 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_Trimmer_Murata_TZB4-A" H 8950 1800 50  0001 C CNN
+F 3 "~" H 8950 1800 50  0001 C CNN
+	1    8950 1800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
